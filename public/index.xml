@@ -1,11 +1,59 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>My New Hugo Project</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on My New Hugo Project</description>
+    <title>Caleb Gourley | Game Developer</title>
+    <link>http://localhost:1313/portfolio/</link>
+    <description>Recent content on Caleb Gourley | Game Developer</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Patchwork Ōtautahi</title>
+      <link>http://localhost:1313/portfolio/projects/patchwork-otautahi/</link>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/projects/patchwork-otautahi/</guid>
+      <description>An interactive installation that brings Christchurch to life - built for public spaces, made to be played by everyone who walks past.</description>
+    </item>
+    <item>
+      <title>Cool Turtle Throwdown 2</title>
+      <link>http://localhost:1313/portfolio/projects/cool-turtle-throwdown-2/</link>
+      <pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/projects/cool-turtle-throwdown-2/</guid>
+      <description>An above-board fighting turtles league, where up to four turtles are thrown into an arena and need to take each other down to win.</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/portfolio/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/about/</guid>
+      <description>&lt;p&gt;Hi, I&amp;rsquo;m &lt;strong&gt;Caleb Gourley&lt;/strong&gt; a game developer studying at the University of Canterbury.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s been a fantastic journey through the degree, providing an abundance of experiences and opportunities. Some of the best included taking advantage of an internship run by Fantail Games, soaking up and developing the technical and soft skills required in an industry setting from a very welcoming and supportive team, and getting hands-on experience with the future of wearable technology. Looking forward to the next challenge with my developed skill set and experience delivering publicly exhibited interactive experiences.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>cv</title>
+      <link>http://localhost:1313/portfolio/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/cv/</guid>
+      <description>&lt;!-- Optional: drop a PDF at static/resume.pdf and link it --&gt;
+&lt;!-- [Download PDF](../resume.pdf) --&gt;
+&lt;h2 id=&#34;education&#34;&gt;Education&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;bachelor of digital screen with honours&lt;/strong&gt; | University of Canterbury
+&lt;em&gt;2023 | 2026&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;experience&#34;&gt;Experience&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Game Developer&lt;/strong&gt; — Fantail Games
+&lt;em&gt;October 2025 – Present&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What you did&lt;/li&gt;
+&lt;li&gt;Impact / results&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+&lt;p&gt;See &lt;a href=&#34;../projects/&#34;&gt;Projects&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;skills&#34;&gt;Skills&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Unreal Engine&lt;/li&gt;
+&lt;li&gt;C++&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
   </channel>
 </rss>

@@ -1,0 +1,52 @@
+{{- $id := .Get "id" | default "project-gallery" -}}
+{{- $label := .Get "label" | default "Project gallery" -}}
+{{- $alt := .Get "alt" | default "Gallery image" -}}
+{{- $imageNames := slice -}}
+{{- with .Get "images" -}}
+  {{- range split . "," -}}
+    {{- $imageNames = $imageNames | append (strings.TrimSpace .) -}}
+  {{- end -}}
+{{- else -}}
+  {{- range $index := seq 1 8 -}}
+    {{- $imageNames = $imageNames | append (printf "Carousel%d.*" $index) -}}
+  {{- end -}}
+{{- end -}}
+{{- $carouselImages := slice -}}
+{{- range $imageName := $imageNames -}}
+  {{- $image := $.Page.Resources.GetMatch $imageName -}}
+  {{- with $image -}}
+    {{- $carouselImages = $carouselImages | append . -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if gt (len $carouselImages) 0 -}}
+<div class="project-carousel" data-carousel id="{{ $id }}" aria-roledescription="carousel" aria-label="{{ $label }}">
+    <div class="project-carousel__viewport">
+        <div class="project-carousel__track">
+            {{- range $index, $image := $carouselImages -}}
+            <div class="project-carousel__slide" data-carousel-slide role="group" aria-roledescription="slide" aria-label="{{ add $index 1 }} of {{ len $carouselImages }}">
+                <img src="{{ $image.RelPermalink }}" alt="{{ printf "%s %d" $alt (add $index 1) }}" loading="{{ if eq $index 0 }}eager{{ else }}lazy{{ end }}">
+            </div>
+            {{- end -}}
+        </div>
+    </div>
+
+    <div class="project-carousel__controls">
+        <button class="project-carousel__button" type="button" data-carousel-prev aria-label="Previous image">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m15 18-6-6 6-6"></path>
+            </svg>
+        </button>
+        <div class="project-carousel__dots" role="tablist" aria-label="Choose gallery image">
+            {{- range $index, $_ := $carouselImages -}}
+            <button class="project-carousel__dot{{ if eq $index 0 }} is-active{{ end }}" type="button" data-carousel-dot="{{ $index }}" role="tab" aria-label="Show image {{ add $index 1 }}" aria-selected="{{ if eq $index 0 }}true{{ else }}false{{ end }}"></button>
+            {{- end -}}
+        </div>
+        <button class="project-carousel__button" type="button" data-carousel-next aria-label="Next image">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m9 18 6-6-6-6"></path>
+            </svg>
+        </button>
+    </div>
+</div>
+{{- end -}}

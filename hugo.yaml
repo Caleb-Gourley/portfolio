@@ -1,4 +1,103 @@
-baseURL: https://example.org/
+baseURL: https://caleb-gourley.github.io/portfolio/
 locale: en-us
-title: My New Hugo Project
+title: Caleb Gourley | Game Developer
 theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+
+pagination:
+  pagerSize: 10
+
+# Needed for the Search page
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  env: production
+  title: Caleb Gourley | Game Developer
+  description: "Game developer portfolio | gameplay programming, design, and tools." # TODO
+  author: Caleb Gourley
+  defaultTheme: auto # light | dark | auto
+  disableThemeToggle: false
+
+  # Which section is listed as "posts" across the site
+  mainSections:
+    - projects
+
+  ShowReadingTime: false
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowToc: false
+  hideFooter: false
+
+  # Homepage: profile mode (photo + intro + buttons)
+  profileMode:
+    enabled: true
+    title: Caleb Gourley
+    subtitle: "Game developer currently studying digital screen with honours at UC." # TODO
+    imageUrl: images/profile.png
+    imageTitle: Profile photo
+    imageWidth: 160
+    imageHeight: 160
+    buttons:
+      - name: Projects
+        url: projects/
+      - name: About
+        url: about/
+      - name: CV
+        url: pdf/caleb-gourley-cv-temp.pdf
+    subtitle2: "I make games and tools for fun and profit. I also like to write about game development and share my knowledge with the world." # TODO
+
+  socialIcons:
+    - name: github
+      url: https://github.com/Caleb-Gourley
+    - name: itchio
+      url: https://caleb-gourley.itch.io/
+    - name: linkedin
+      url: https://www.linkedin.com/in/caleb-gourley-924a6131b/
+    - name: email
+      url: calebgourley@outlook.com
+
+  cover:
+    hiddenInList: false # show cover thumbnails on the projects list
+    hiddenInSingle: false
+
+  fuseOpts:
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 10
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 20
+    - identifier: cv
+      name: CV
+      url: pdf/caleb-gourley-cv.pdf
+      weight: 30
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 40
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 50
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # allows raw HTML in markdown (e.g. itch.io embeds)
+  highlight:
+    noClasses: false
