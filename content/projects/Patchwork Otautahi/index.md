@@ -59,5 +59,5 @@ I learned to investigate problems with logs and metrics, communicate clearly dur
     id="patchwork-gallery"
     label="Patchwork Ōtautahi gallery"
     alt="Patchwork Ōtautahi gallery image"
-    images="Carousel1.png,Carousel3.png,Carousel4.png,Carousel5.png,Carousel6.png,Carousel7.png,Carousel8.png"
+    images="patchwork-library.jpg,Carousel1.png,Carousel3.png,Carousel4.png,Carousel5.png,Carousel6.png,Carousel7.png,Carousel8.png"
 >}}
