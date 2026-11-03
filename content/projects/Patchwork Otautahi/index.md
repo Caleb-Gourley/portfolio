@@ -11,14 +11,14 @@ cover:
     relative: true
 ---
 
-|                |                                                                                                           |
-|----------------|-----------------------------------------------------------------------------------------------------------|
-| **Role**       | Programmer                                                                                                |
-| **Technology** | Unity, Kotlin Multiplatform, C#                                                                           |
-| **Team**       | 11 people                                                                                                 |
-| **Duration**   | 7 months                                                                                                  |
-| **Outcome**    | Multi-screen installation connecting players with their personal devices                                  |
-| **Links**      | [Project Website](https://www.patchworkplay.com) · [Instagram](https://www.instagram.com/patchwork.play/) |
+|                |                                                                                                                                                                                  |
+|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Role**       | Programmer                                                                                                                                                                       |
+| **Technology** | Unity, Kotlin Multiplatform, C#                                                                                                                                                  |
+| **Team**       | 11 people                                                                                                                                                                        |
+| **Duration**   | 7 months                                                                                                                                                                         |
+| **Outcome**    | Multi-screen installation connecting players with their personal devices                                                                                                         |
+| **Links**      | [Play on itch.io](https://samuel-kennedy.itch.io/patchwork-otautahi) · [Project Website](https://www.patchworkplay.com) · [Instagram](https://www.instagram.com/patchwork.play/) |
 
 ## Overview
 
